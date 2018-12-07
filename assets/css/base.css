@@ -118,29 +118,29 @@ section.top-header {
             font-size: 120%; }
           section.top-header > div > div ul li span:nth-child(2) {
             font-size: 106%; }
-    section.top-header > div .left-header {
+    section.top-header > div .left {
       float: left; }
-      section.top-header > div .left-header ul li:nth-child(1) {
+      section.top-header > div .left ul li:nth-child(1) {
         text-align: right;
         border-left: 0; }
-        section.top-header > div .left-header ul li:nth-child(1) a {
+        section.top-header > div .left ul li:nth-child(1) a {
           color: #333; }
-      section.top-header > div .left-header ul li:nth-child(2) {
+      section.top-header > div .left ul li:nth-child(2) {
         text-align: left; }
-      section.top-header > div .left-header ul.min li:nth-child(2) {
+      section.top-header > div .left ul.min li:nth-child(2) {
         display: none; }
-      section.top-header > div .left-header ul.min li span {
+      section.top-header > div .left ul.min li span {
         float: none;
         display: inline-block; }
-      section.top-header > div .left-header ul.min li span:nth-child(2) {
+      section.top-header > div .left ul.min li span:nth-child(2) {
         padding-left: 10px;
         border-left: 1px solid #eeeeee; }
-    section.top-header > div .right-header {
+    section.top-header > div .right {
       float: right; }
-      section.top-header > div .right-header ul li {
+      section.top-header > div .right ul li {
         text-align: right;
         padding: 8px 0px; }
-        section.top-header > div .right-header ul li a {
+        section.top-header > div .right ul li a {
           width: auto;
           font-weight: 600;
           text-transform: uppercase;
@@ -151,7 +151,7 @@ section.top-header {
           font-size: 120%;
           margin: 0 auto;
           padding: 7px; }
-        section.top-header > div .right-header ul li ul li {
+        section.top-header > div .right ul li ul li {
           float: none;
           text-align: left;
           width: 100%;
@@ -160,7 +160,7 @@ section.top-header {
           padding: 0px 0px;
           border-left: 0px solid #eeeeee;
           border-top: 1px solid #cecece; }
-          section.top-header > div .right-header ul li ul li a {
+          section.top-header > div .right ul li ul li a {
             color: #000;
             display: inline-block;
             height: auto;
@@ -172,31 +172,31 @@ section.top-header {
             padding: 3px 0px;
             font-size: 14px;
             font-weight: 600; }
-        section.top-header > div .right-header ul li span.de-lag {
+        section.top-header > div .right ul li span.de-lag {
           padding: 2px;
           font-size: 120%;
           display: inline-block;
           padding-top: 5px;
           text-transform: initial; }
-        section.top-header > div .right-header ul li select {
+        section.top-header > div .right ul li select {
           height: 25px; }
-        section.top-header > div .right-header ul li #myDIV {
+        section.top-header > div .right ul li #myDIV {
           position: absolute;
           right: 0;
           top: 43px;
           z-index: 1; }
-          section.top-header > div .right-header ul li #myDIV div {
+          section.top-header > div .right ul li #myDIV div {
             position: relative;
             display: block; }
-            section.top-header > div .right-header ul li #myDIV div form {
+            section.top-header > div .right ul li #myDIV div form {
               width: 280px;
               padding: 0; }
-              section.top-header > div .right-header ul li #myDIV div form label {
+              section.top-header > div .right ul li #myDIV div form label {
                 text-indent: -5000px;
                 height: 0px;
                 display: block;
                 cursor: pointer; }
-              section.top-header > div .right-header ul li #myDIV div form input#search_key {
+              section.top-header > div .right ul li #myDIV div form input#search_key {
                 border: 2px solid #aa2323;
                 height: 36px;
                 line-height: 34px;
@@ -205,7 +205,7 @@ section.top-header {
                 background: url(../images/menu-bullet.png) #fff no-repeat 8px 12px;
                 font-family: 'Lato', sans-serif;
                 font-weight: 600; }
-              section.top-header > div .right-header ul li #myDIV div form input.bttn-search {
+              section.top-header > div .right ul li #myDIV div form input.bttn-search {
                 width: 34px;
                 height: 36px;
                 cursor: pointer;
@@ -219,7 +219,7 @@ section.top-header {
                 left: 240px;
                 padding: 5px 20px;
                 margin: 0; }
-      section.top-header > div .right-header ul li.drop-down ul {
+      section.top-header > div .right ul li.drop-down ul {
         position: absolute;
         z-index: 9999;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -227,16 +227,16 @@ section.top-header {
         padding: 0px 0px;
         left: -9999em;
         top: 36px; }
-        section.top-header > div .right-header ul li.drop-down ul li {
+        section.top-header > div .right ul li.drop-down ul li {
           float: none; }
-        section.top-header > div .right-header ul li.drop-down ul li:nth-child(4) {
+        section.top-header > div .right ul li.drop-down ul li:nth-child(4) {
           background: #000; }
-          section.top-header > div .right-header ul li.drop-down ul li:nth-child(4) a {
+          section.top-header > div .right ul li.drop-down ul li:nth-child(4) a {
             color: #ffff00; }
-      section.top-header > div .right-header ul li.drop-down:hover, section.top-header > div .right-header ul li.drop-down.hover {
+      section.top-header > div .right ul li.drop-down:hover, section.top-header > div .right ul li.drop-down.hover {
         z-index: 100;
         background: #d4d3d3; }
-        section.top-header > div .right-header ul li.drop-down:hover ul, section.top-header > div .right-header ul li.drop-down.hover ul {
+        section.top-header > div .right ul li.drop-down:hover ul, section.top-header > div .right ul li.drop-down.hover ul {
           left: 0; }
 
 .make_me_dark {
@@ -250,15 +250,15 @@ section.top-header {
       color: #ffff00; }
     .make_me_dark section.top-header .left-header ul li:nth-child(1) a {
       color: #ffff00; }
-    .make_me_dark section.top-header .right-header ul li a {
+    .make_me_dark section.top-header .right ul li a {
       color: #ffff00; }
-    .make_me_dark section.top-header .right-header ul li ul li {
+    .make_me_dark section.top-header .right ul li ul li {
       background: #333; }
-      .make_me_dark section.top-header .right-header ul li ul li a {
+      .make_me_dark section.top-header .right ul li ul li a {
         color: #ffff00; }
-    .make_me_dark section.top-header .right-header ul li.drop-down ul li:nth-child(4) {
+    .make_me_dark section.top-header .right ul li.drop-down ul li:nth-child(4) {
       background: #fff; }
-      .make_me_dark section.top-header .right-header ul li.drop-down ul li:nth-child(4) a {
+      .make_me_dark section.top-header .right ul li.drop-down ul li:nth-child(4) a {
         color: #000; }
 
 @media screen and (max-width: 1024px) {
@@ -268,12 +268,12 @@ section.top-header {
       font-size: 108%; }
     section.top-header > div > div ul li span:nth-child(2) {
       font-size: 92%; }
-    section.top-header > div .right-header ul li span.de-lag {
+    section.top-header > div .right ul li span.de-lag {
       display: none; }
-    section.top-header > div .right-header ul li a {
+    section.top-header > div .right ul li a {
       font-size: 108%; } }
 @media screen and (max-width: 768px) {
-  section.top-header > div .left-header, section.top-header > div .right-header {
+  section.top-header > div .left, section.top-header > div .right {
     float: none;
     width: 100%;
     position: relative;
@@ -282,36 +282,36 @@ section.top-header {
     text-align: center;
     border-top: 1px solid #eeeeee;
     display: block; }
-  section.top-header > div .left-header ul li {
+  section.top-header > div .left ul li {
     width: 100%;
     padding: 0;
     height: auto; }
-    section.top-header > div .left-header ul li span {
+    section.top-header > div .left ul li span {
       float: none;
       display: inline; }
-    section.top-header > div .left-header ul li span:nth-child(1) {
+    section.top-header > div .left ul li span:nth-child(1) {
       padding-right: 5px; }
-  section.top-header > div .left-header ul li:nth-child(1), section.top-header > div .left-header ul li:nth-child(2) {
+  section.top-header > div .left ul li:nth-child(1), section.top-header > div .left ul li:nth-child(2) {
     text-align: center; }
-  section.top-header > div .right-header > ul {
+  section.top-header > div .right > ul {
     text-align: center;
     display: inline-block;
     height: 30px;
     list-style: none;
     margin: 0 auto;
     padding: 0; }
-    section.top-header > div .right-header > ul li {
+    section.top-header > div .right > ul li {
       text-align: center;
       padding: 0;
       height: 35px; }
-      section.top-header > div .right-header > ul li select {
+      section.top-header > div .right > ul li select {
         margin: 5px 0px; }
-      section.top-header > div .right-header > ul li a {
+      section.top-header > div .right > ul li a {
         padding: 10px 10px; } }
 @media screen and (max-width: 767px) {
-  section.top-header > div .right-header > ul > li:nth-child(1) {
+  section.top-header > div .right > ul > li:nth-child(1) {
     display: none; }
-  section.top-header > div .right-header > ul li #myDIV {
+  section.top-header > div .right > ul li #myDIV {
     left: 0;
     top: 36px; } }
 li {

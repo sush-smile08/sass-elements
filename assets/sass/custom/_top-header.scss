@@ -44,7 +44,7 @@ section.top-header{
                 }
             }
         }
-        .left-header{
+        .left{
             float: left;
             ul{
                 li:nth-child(1){
@@ -74,7 +74,7 @@ section.top-header{
                 }
             }
         }
-        .right-header{
+        .right{
             float: right;
             ul{
                 li{
@@ -228,7 +228,7 @@ section.top-header{
                 }
             }
         }
-        .right-header{
+        .right{
             ul{
                 li{
                     a{
@@ -276,7 +276,7 @@ section.top-header{
                     }
                 }
             }
-            .right-header{
+            .right{
                 ul{
                     li{
                         span.de-lag{
@@ -295,7 +295,7 @@ section.top-header{
 @media screen and (max-width:768px){
     section.top-header{
         > div{
-            .left-header, .right-header{
+            .left, .right{
                 float: none;
                 width: 100%;
                 position: relative;
@@ -305,7 +305,7 @@ section.top-header{
                 border-top: 1px solid #eeeeee;
                 display: block;
             }
-            .left-header{
+            .left{
                 ul{
                     li{
                         width: 100%;
@@ -324,7 +324,7 @@ section.top-header{
                     }
                 }
             }
-            .right-header{
+            .right{
                 > ul{
                     text-align: center;
                     display: inline-block;
@@ -352,7 +352,7 @@ section.top-header{
 @media screen and (max-width: 767px){
     section.top-header{
         > div{
-            .right-header{
+            .right{
                 > ul{
                     > li:nth-child(1){
                         display: none;
