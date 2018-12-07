@@ -1,0 +1,130 @@
+$xs : 0.625rem;
+$small : 1.5625rem;
+$medium : 3.125rem;
+$large : 4.6875rem;
+$xlarge : 6.25rem;
+$xxlarge: 9.375rem;
+
+@mixin space($type:margin, $direction:all, $amount:$medium){
+	@if $type == padding {
+		@if $direction == all{
+			padding: $amount;
+		} @else if $direction == top {
+			padding-top:$amount
+		} @else if $direction == left {
+			padding-left:$amount
+		} @else if $direction == right {
+			padding-right:$amount
+		} @else {
+			padding-bottom:$amount
+		}
+	} @else {
+		@if $direction == all{
+			margin: $amount;
+		} @else if $direction == top {
+			margin-top:$amount
+		} @else if $direction == left {
+			margin-left:$amount
+		} @else if $direction == right {
+			margin-right:$amount
+		} @else {
+			margin-bottom:$amount
+		}
+	}
+}
+
+html{
+  background-color:rgb(184, 180, 180);
+}
+.container{
+  margin:0 auto;
+  display:block;
+  text-align:center;
+  overflow: hidden;
+}
+h1{
+  font-size:42px;
+  text-align:center;
+  width:80%;
+  margin-left:10%;
+  line-height:50px;
+  color:#fff;
+}
+
+.box{
+  background-color:#eee;
+  display:inline-block;
+  height:100px;
+  width:200px;
+  margin: 10px;
+  p{
+    line-height:20px;
+  }
+}
+
+//Start of box Examples
+.default{
+    @include space();
+}
+.padding.small{
+  @include space(padding, all, $small);
+}
+.padding.medium{
+  @include space(padding, all, $medium);
+}
+.padding.large{
+  @include space(padding, all, $large);
+}
+.padding.xlarge{
+  @include space(padding, all, $xlarge);
+}
+.padding.xxlarge{
+  @include space(padding, all, $xxlarge);
+}
+.padding.left{
+  @include space(padding, left, $small);
+}
+.padding.right{
+  @include space(padding, right, $small);
+}
+.padding.top{
+  @include space(padding, top, $small);
+}
+.padding.bottom{
+  @include space(padding, bottom, $small);
+}
+
+.margin.small{
+  @include space(margin, all, $small);
+}
+.margin.medium{
+  @include space(margin, all, $medium);
+}
+.margin.large{
+  @include space(margin, all, $large);
+}
+.margin.xlarge{
+  @include space(margin, all, $xlarge);
+}
+.margin.xxlarge{
+  @include space(margin, all, $xxlarge);
+}
+.margin.left{
+  @include space(margin, left, $large);
+}
+.margin.right{
+  @include space(margin, right, $large);
+}
+.margin.top{
+  @include space(margin, top, $large);
+}
+.margin.bottom{
+  @include space(margin, bottom, $large);
+}
+
+// .hover{
+//   @include space(margin, top, $large);
+//   &:hover{
+//     @include space(padding, bottom, $large);
+//   }
+// }

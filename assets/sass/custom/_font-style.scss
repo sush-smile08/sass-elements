@@ -1,0 +1,56 @@
+@mixin font-size($size) {
+    $sizes: (extra-small:1.0rem,small: 	1.2rem, regular: 1.6rem, large: 2.4rem, x-large: 3.2rem,xx-large: 4.8rem,
+      xxx-large: 	6.4rem);
+    $output: $size;
+    @if map-has-key($sizes, $size) {$output: map-get($sizes, $size);}
+     font-size: $output;
+  }
+  dd.extra-small{ @include font-size(extra-small);}
+  dd.small {@include font-size(small);}
+  dd.regular {@include font-size(regular);}
+  dd.large { @include font-size(large);}
+  dd.x-large {@include font-size(x-large);}
+  dd.xx-large {@include font-size(xx-large);}
+  dd.xxx-large {@include font-size(xxx-large);}
+  @mixin font-weight($weight) {
+    $weights: (
+      thin: 100,
+      extra-light: 200,ultra-light: 200,
+      light: 300,
+      normal: 400,book: 400,regular: 400,
+      medium: 500,
+      semi-bold: 600,demi-bold: 600,
+      bold: 700,
+      extra-bold: 800,
+      ultra-bold: 900,heavy: 900,black: 900,ultra: 900,ultra-black: 900,extra-ultra: 900
+    );
+    $output: $weight;
+    @if map-has-key($weights, $weight) {$output: map-get($weights, $weight);}
+    font-weight: $output;
+  }
+  dd.w100 {@include font-weight(thin);}
+  dd.w200 {@include font-weight(extra-light);}
+  dd.w300 {@include font-weight(light);}
+  dd.w400 {@include font-weight(book);}
+  dd.w500 {@include font-weight(medium);}
+  dd.w600 {@include font-weight(semi-bold);}
+  dd.w700 {@include font-weight(bold);}
+  dd.w800 { @include font-weight(extra-bold);}
+  dd.w900 {@include font-weight(ultra-bold);}
+  dl, dt, dd {padding: 0; margin: 0;}
+  dl {width: 70%;min-width: 660px;}
+  
+  dl {overflow: hidden;margin: 1em auto;
+    dt, dd {float: left; width: 50%;border-bottom: 1px solid #ccc;text-align: center;min-height: 35px;line-height: 35px;}
+    dt { width: 25%; clear: left; @include font-weight(book) }
+    dd { width: 75%; clear: right; }
+    dd + dd {    padding-left: 25%;}
+    dt:first-of-type, dd:first-of-type {@include font-weight(medium);}
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    font-size: 1.6rem;
+    margin: 0; 
+  }

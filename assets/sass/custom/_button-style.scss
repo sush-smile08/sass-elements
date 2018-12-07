@@ -1,0 +1,20 @@
+$basic:#ddd;$default:#fff;$primary:#337ab7;$success:#2ecc71;$info:#5bc0de;$warning:#f1c40f;$danger:#e74c3c;
+$link:transparent;
+$black-clr:#000;$while-clr:#fff;$active-clr:#337ab7;$grey-clr:#ddd;
+@mixin button($bg,$clr) {
+    background: $bg; color: $clr;
+    &:hover {background:darken($bg,8%); transition: all 0.3s ease;}
+    &:active {background:darken($bg,25%);} 
+  }
+  .btn {text-decoration:none;padding:5px 10px;border-radius:5px;font-size:1.5em;}
+  .btn-basic {@include button($basic, $black-clr);}
+  .btn-default { @include button($default, $black-clr);}
+  .btn-primary{@include button($primary, $black-clr);}
+  .btn-success { @include button($success, $black-clr);}
+  .btn-info { @include button($info, $black-clr); }
+  .btn-warning { @include button($warning, $black-clr);}
+  .btn-danger{ @include button($danger, $black-clr);}
+  .btn-link { @include button($link, $active-clr);}
+  /*Other Stylez*/
+  .wrap {margin:0 auto;text-align:center;}
+  h1 { font-family: 'Poiret One', cursive;font-size:3em;}

@@ -1,0 +1,96 @@
+$grey: #9e9e9e;
+$grey900: #212121;
+$grey800: #424242;
+$grey700: #616161;
+$grey600: #757575;
+$grey500: #9E9E9E;
+$grey400: #BDBDBD;
+$grey300: #E0E0E0;
+$grey200: #EEEEEE;
+$grey100: #F5F5F5;
+$grey50: #FAFAFA;
+
+$color-light: #fff;
+$color-dark: #000;
+
+
+$p-light: #757ce8;
+$p-main: #3f50b5;
+$p-dark: #002884;
+$s-light: #ff7961;
+$s-main: #f44336;
+$s-dark: #ba000d;
+$t-light: #90caf9;
+$t-main: #2196f3;
+$t-dark: #1565C0;
+
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+@mixin background($bg, $clr){
+    background: $bg; 
+    color: $clr;
+}
+.primary-light{
+    @include background($p-light, $color-light);
+}
+.primary-light:hover{
+    background: $p-dark;
+}
+.primary-main{
+    @include background($p-main, $color-light);
+}
+.primary-dark{
+    @include background($p-dark, $color-light);
+}
+.secondary-light{
+    @include background($s-light, $color-light);
+}
+.secondary-main{
+    @include background($s-main, $color-light);
+}
+.secondary-dark{
+    @include background($s-dark, $color-light);
+}
+.tertiary-light{
+    @include background($t-light, $color-dark);
+}
+.tertiary-main{
+    @include background($t-main, $color-dark);
+}
+.tertiary-dark{
+    @include background($t-dark, $color-light);
+}
+.bg-900{
+    @include background($grey900, $color-light);
+}
+.bg-800{
+    @include background($grey800, $color-light);
+}
+.bg-700{
+    @include background($grey700, $color-light);
+}
+.bg-600{
+    @include background($grey600, $color-light);
+}
+.bg-500{
+    @include background($grey500, $color-dark);
+}
+.bg-400{
+    @include background($grey400, $color-dark);
+}
+.bg-300{
+    @include background($grey300, $color-dark);
+}
+.bg-200{
+    @include background($grey200, $color-dark);
+}
+.bg-100{
+    @include background($grey100, $color-dark);
+}
+.bg-50{
+    @include background($grey50, $color-dark);
+}
+

@@ -1,0 +1,74 @@
+@mixin font-size($size) {
+	$sizes: (alert-small:0.75rem,alert-large:1.75rem);
+	$output: $size;
+	@if map-has-key($sizes, $size) {$output: map-get($sizes, $size);}
+	font-size: $output;
+}
+%alert {
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-primary {
+	background: #cce5ff;
+	color: #004085;
+	border-color: #b8daff;
+	@extend %alert;
+}
+.alert-secondary {
+	background: #e2e3e5;
+	color: #383d41;
+	border-color: #d6d8db;
+	@extend %alert;
+}
+.alert-success {
+	background:#75aa61;
+	color: #155724;
+	border-color: #c3e6cb;
+	@extend %alert;
+}
+.alert-danger {
+	background:#f8d7da;
+	color: #721c24;
+	border-color: #f5c6cb;
+	@extend %alert;
+}
+.alert-danger {
+	background:#f8d7da;
+	color: #721c24;
+	border-color: #f5c6cb;
+	@extend %alert;
+}
+.alert-warning {
+	background:#fff3cd;
+	color: #856404;
+	border-color: #ffeeba;
+	@extend %alert;
+}
+.alert-info{
+	background:#d1ecf1;
+	color: #0c5460;
+	border-color: #bee5eb;
+	@extend %alert;
+}
+.alert-light{
+	background: #fefefe;
+	color: #818182;
+	border-color: #e6e6e8;
+	@extend %alert;
+}
+.alert-dark{
+	background: #1b1e21;
+	color: #d6d8d9;
+	border-color: #c6c8ca;
+	@extend %alert;
+}
+.alert-small{
+	@include font-size(alert-small);
+	padding: 0.5rem 0.50rem;
+}
+.alert-large{
+	@include font-size(alert-large)
+}
